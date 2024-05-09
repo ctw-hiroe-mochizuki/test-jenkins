@@ -8,7 +8,7 @@ using UnityEngine;
 public static class JenkinsBuild
 {
 	// todo : MACの時は確かこのパスの書き方だとダメだった記憶があるので後ほど調べる
-	private const string BUILD_PATH = "C:/Users/hiroe.mochizuki/BeastProjects/jenkinsTest/TestBuild/";
+	private const string BUILD_PATH = "C:/Users/hiroe.mochizuki/BeastProjects/jenkinsTest/TestBuild";
 
 	private const string ARG_PATH_KEY = "-filePath";
 	private const string ARG_BUILD_NUMBER_KEY = "-buidNumber";

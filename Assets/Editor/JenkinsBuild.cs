@@ -48,10 +48,13 @@ public static class JenkinsBuild
 					number = int.Parse(args[i + 1]);
 					break;
 			}
+			Debug.Log($">>> args[ {i} ] : {args[i]}");
 		}
 
 		// パスの組み立て(ビルド番号を添えて)
 		var outputPath = $"{path}/test_{number}.apk";
+		
+		Debug.Log($">>> outputPath = {outputPath}");
 
 		// apk作成
 		var result = BuildPipeline.BuildPlayer(sceneNameArray, outputPath , BuildTarget.Android, BuildOptions.Development);

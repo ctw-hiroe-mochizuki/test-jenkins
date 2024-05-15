@@ -6,7 +6,7 @@ public class SampleScene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        var hoge = "test hoge";
+        var hoge = "test hoge message";
         Debug.Log($"{hoge}");
     }
 

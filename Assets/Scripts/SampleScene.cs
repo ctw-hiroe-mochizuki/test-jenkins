@@ -24,3 +24,5 @@ public class SampleScene : MonoBehaviour
         }
     }
 }
+
+// http://[USER_ID]:[API_TOKEN]@[JENKINS_HOST]/job/[JOB_NAME]/[build|buildWithParameters]?token=[TOKEN_NAME]

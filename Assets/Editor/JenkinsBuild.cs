@@ -1,9 +1,11 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using UnityEditor;
 using UnityEditor.Build.Reporting;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 public static class JenkinsBuild
 {
@@ -57,9 +59,9 @@ public static class JenkinsBuild
 		Debug.Log($">>> outputPath = {outputPath}");
 
 		// apk作成
-		var result = BuildPipeline.BuildPlayer(sceneNameArray, outputPath , BuildTarget.Android, BuildOptions.Development);
-		// リザルトログ
-		ResultLog(result);
+		// var result = BuildPipeline.BuildPlayer(sceneNameArray, outputPath , BuildTarget.Android, BuildOptions.Development);
+		// // リザルトログ
+		// ResultLog(result);
 	}
 
 	#region Util
